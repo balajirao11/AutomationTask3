@@ -102,6 +102,7 @@ public void click_on_Proceed_to_checkout_Button() throws Throwable{
 	formDetails.clkOnProceedCheckout();
 }
 
+
 @When("^click on save Button$")
 public void click_on_save_Button() throws Throwable{
 	formDetails.clkOnSave();

@@ -159,11 +159,10 @@ public class FormDetails {
 	public void clkOnProceedCheckout() {
 		
 		WebElement btnCheckout = driver.findElement(By.xpath("//a[@title='Proceed to checkout']"));
-		//WebElement btnCheckout = driver.findElement(By.cssSelector("#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a > span"));
-		
 		JavascriptExecutor executor1 = (JavascriptExecutor)driver;
 		executor1.executeScript("arguments[0].click();", btnCheckout);
-		//btnCheckout.click();
+	
+		driver.navigate().refresh();
 	}
 	
 	public void clkOnSave() {

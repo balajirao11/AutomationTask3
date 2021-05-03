@@ -124,15 +124,16 @@ public class MyAccountPage {
 	}
 
 	public void tshirtsTab() {
-		//String tshrt = driver.findElement(By.xpath("//ul[@class=\"sf-menu clearfix menu-content sf-js-enabled sf-arrows\"]//li[1]//a[@title='T-shirts']")).getText();
 		WebElement tShirt = driver.findElement(By.xpath("//a[@title='T-shirts']"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", tShirt);
 		
+		
+		
 		WebElement addCart = driver.findElement(By.xpath("//div[@class=\"button-container\"]//span[contains(text(),'Add to cart')]"));
 		JavascriptExecutor executor1 = (JavascriptExecutor)driver;
 		executor1.executeScript("arguments[0].click();", addCart);
-		addCart.click();
+	
 	}
 	
 	//The below method clicks on sign out button
