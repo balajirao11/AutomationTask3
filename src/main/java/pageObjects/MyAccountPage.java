@@ -130,6 +130,7 @@ public class MyAccountPage {
 		
 		
 		
+		
 		WebElement addCart = driver.findElement(By.xpath("//div[@class=\"button-container\"]//span[contains(text(),'Add to cart')]"));
 		JavascriptExecutor executor1 = (JavascriptExecutor)driver;
 		executor1.executeScript("arguments[0].click();", addCart);
