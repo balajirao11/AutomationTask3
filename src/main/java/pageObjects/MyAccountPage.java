@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -128,8 +129,11 @@ public class MyAccountPage {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", tShirt);
 		
-		
-		
+		/*WebElement image = driver.findElement(By.xpath("//img[@title='Faded Short Sleeve T-shirts']"));
+		Actions action = new Actions(driver);
+		action.moveToElement(image).build().perform();
+		*/
+
 		
 		WebElement addCart = driver.findElement(By.xpath("//div[@class=\"button-container\"]//span[contains(text(),'Add to cart')]"));
 		JavascriptExecutor executor1 = (JavascriptExecutor)driver;
@@ -139,6 +143,8 @@ public class MyAccountPage {
 	
 	//The below method clicks on sign out button
 	public void logoutfromTheApplication() {
+		
+		
 		signoutbtn.click();
 	}
 	
