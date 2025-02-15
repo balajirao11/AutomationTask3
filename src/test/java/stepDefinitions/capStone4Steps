@@ -1,0 +1,58 @@
+package stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import io.cucumber.java.en.*;
+import pages.HomePage;
+import pages.ABTestingPage;
+import pages.DropdownPage;
+import pages.FramesPage;
+import utils.BaseTest;
+
+public class StepDefinitions extends BaseTest {
+
+	HomePage homePage;
+	ABTestingPage abTestingPage;
+	DropdownPage dropdownPage;
+	FramesPage framesPage;
+
+	@Given("I launch {string}")
+	public void i_launch(String url) {
+		driver.get(url);
+		homePage = PageFactory.initElements(driver, HomePage.class);
+	}
+
+	@Then("The page title should be {string}")
+	public void the_page_title_should_be(String expectedTitle) {
+		Assert.assertEquals(driver.getTitle(), expectedTitle);
+	}
+
+	@When("I click on {string} link")
+	public void i_click_on_link(String linkText) {
+		homePage.clickLink(linkText);
+	}
+
+	@Then("The text on the page should be {string}")
+	public void the_text_on_the_page_should_be(String expectedText) {
+		abTestingPage = PageFactory.initElements(driver, ABTestingPage.class);
+		Assert.assertTrue(abTestingPage.getText().contains(expectedText));
+	}
+
+	@And("I select {string} from dropdown")
+	public void i_select_from_dropdown(String option) {
+		dropdownPage = PageFactory.initElements(driver, DropdownPage.class);
+		dropdownPage.selectDropdownOption(option);
+	}
+
+	@Then("The selected option should be {string}")
+	public void the_selected_option_should_be(String expectedOption) {
+		Assert.assertEquals(dropdownPage.getSelectedOption(), expectedOption);
+	}
+
+	@Then("I should see {string} link")
+	public void i_should_see_link(String linkText) {
+		framesPage = PageFactory.initElements(driver, FramesPage.class);
+		Assert.assertTrue(framesPage.isLinkPresent(linkText));
+	}
+}
