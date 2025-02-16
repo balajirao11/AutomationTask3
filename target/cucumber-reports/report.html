@@ -33,8 +33,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -47,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 14, 2025 08:48:04 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 16, 2025 12:55:30 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,8 +72,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -125,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -140,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -155,10 +152,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='5%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='95%'>38</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -172,262 +169,62 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Register New Customer and place an order from T-shirts tab</span>
-						<span class='test-time'>Feb 14, 2025 08:48:04 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Implement below capstone project using Selenium with Java concepts (Implement BDD Framework)</span>
+						<span class='test-time'>Feb 16, 2025 12:55:30 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 38s+777ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 52s+979ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">As a new customer, Create an account and place order from T-shirts</span>
+		<span class="desc-text">Implement mini project using Gherkin language</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
+		<li test-id='3' class='node scenario pass' status='pass'>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">As a new customer, Create an account and place order from T-shirts</span>
+			<span class="bdd-step-name">Implement mini project using Gherkin language</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node given fail' status='fail'><b>Given</b>
-						<span class="bdd-step-name">Given user is on Signon page</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sign in')]"}
-  (Session info: chrome=133.0.6943.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BalajiRaos-MacBook-Air.local', ip: 'fe80:0:0:0:4fd:f6b:581c:8980%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/jk/cqhfltkd0nj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a9d051a47cbed1aa3826e24b7bfebb1f
-*** Element info: {Using=xpath, value=//*[contains(text(),'Sign in')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pageObjects.HomePage.clkOnSignInlink(HomePage.java:26)
-	at stepDefinitions.HomePageSteps.user_is_on_Signon_page(HomePageSteps.java:18)
-	at ✽.Given user is on Signon page(automationPractice.feature:4)
-</pre></div>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I launch the cap web url</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='5' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user enter "tes11@xyz.com" and click on create an account button</span>
-							<div class='pre'>skipped</div>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I validate the "Welcome"</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='6' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user select title "mr"</span>
-							<div class='pre'>skipped</div>
+					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I click on ABTesting link</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='7' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user type first name "firstxa"</span>
-							<div class='pre'>skipped</div>
+					<li test-id='7' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I validate the page as "A/B Test Variation 1"</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user type sur name "lastxa"</span>
-							<div class='pre'>skipped</div>
+					<li test-id='8' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I navigate back to home Page</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='9' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter password "Pawd1"</span>
-							<div class='pre'>skipped</div>
+					<li test-id='9' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I selected the "Option1" from the dropdown</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter address "x1 lane"</span>
-							<div class='pre'>skipped</div>
+					<li test-id='10' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I navigate back to home Page</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='11' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter city "salt lake"</span>
-							<div class='pre'>skipped</div>
+					<li test-id='11' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I scroll down on web page</span>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='12' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user select the state "Ohio"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='13' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter the zip "84044"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='14' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user select the country "United States"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='15' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter mobile phone "9834398090"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='16' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter address alias "X1list"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='17' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When click on Register Button</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='18' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then user logged in and navigate to my account page</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='19' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user clicks on "T-shirts" tab</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='20' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When click on Checkout Button</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='21' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And logout from the application</span>
-							<div class='pre'>skipped</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='22' status='fail'>
-	<span class='duration right label'>0h 0m 39s+476ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">As a new customer, create an account and update first name</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='23' class='node scenario fail' status='fail'>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">As a new customer, create an account and update first name</span>
-			
-				<ul class='steps'>
-					<li test-id='24' class='node given fail' status='fail'><b>Given</b>
-						<span class="bdd-step-name">Given user is on Signon page</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sign in')]"}
-  (Session info: chrome=133.0.6943.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BalajiRaos-MacBook-Air.local', ip: 'fe80:0:0:0:4fd:f6b:581c:8980%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/jk/cqhfltkd0nj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 392495b9fb113c4296733e35c54ef5af
-*** Element info: {Using=xpath, value=//*[contains(text(),'Sign in')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pageObjects.HomePage.clkOnSignInlink(HomePage.java:26)
-	at stepDefinitions.HomePageSteps.user_is_on_Signon_page(HomePageSteps.java:18)
-	at ✽.Given user is on Signon page(automationPractice.feature:28)
-</pre></div>
-					</li>
-					<li test-id='25' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user enter "tes19@xyz.com" and click on create an account button</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='26' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user select title "mr"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='27' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user type first name "firstxb"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='28' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user type sur name "lastxb"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='29' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter password "Pawd1"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='30' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter address "x1 lane"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='31' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter city "salt lake"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='32' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user select the state "Ohio"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='33' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter the zip "84044"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='34' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user select the country "United States"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='35' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter mobile phone "9834398090"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='36' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user enter address alias "X1list"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='37' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When click on Register Button</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='38' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then user logged in and navigate to my account page</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='39' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user name "firstxb" followed by "lastxb" displayed in top right corner</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='40' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user can see "My personal information" link in My Account Page</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='41' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user clicks on My personal information link</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='42' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user update first name "testss"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='43' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And user current password "Pawd1"</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='44' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then click on save Button</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='45' class='node and skip' status='skip'><b>And</b>
-						<span class="bdd-step-name">And logout from the application</span>
-							<div class='pre'>skipped</div>
+					<li test-id='12' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I validated the text from the frames</span>
+							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
@@ -461,130 +258,6 @@ Session ID: 392495b9fb113c4296733e35c54ef5af
 </div>
 <!-- test view -->
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Feb 14, 2025 08:48:04 PM</td>
-                                                        <td class='linked' test-id='4'>Register New Customer and place an order from T-shirts tab.As a new customer, Create an account and place order from T-shirts.As a new customer, Create an account and place order from T-shirts.Given user is on Signon page</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sign in')]"}
-  (Session info: chrome=133.0.6943.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BalajiRaos-MacBook-Air.local', ip: 'fe80:0:0:0:4fd:f6b:581c:8980%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/jk/cqhfltkd0nj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a9d051a47cbed1aa3826e24b7bfebb1f
-*** Element info: {Using=xpath, value=//*[contains(text(),'Sign in')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pageObjects.HomePage.clkOnSignInlink(HomePage.java:26)
-	at stepDefinitions.HomePageSteps.user_is_on_Signon_page(HomePageSteps.java:18)
-	at ✽.Given user is on Signon page(automationPractice.feature:4)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Feb 14, 2025 08:48:43 PM</td>
-                                                        <td class='linked' test-id='24'>Register New Customer and place an order from T-shirts tab.As a new customer, create an account and update first name.As a new customer, create an account and update first name.Given user is on Signon page</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sign in')]"}
-  (Session info: chrome=133.0.6943.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BalajiRaos-MacBook-Air.local', ip: 'fe80:0:0:0:4fd:f6b:581c:8980%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/jk/cqhfltkd0nj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 392495b9fb113c4296733e35c54ef5af
-*** Element info: {Using=xpath, value=//*[contains(text(),'Sign in')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pageObjects.HomePage.clkOnSignInlink(HomePage.java:26)
-	at stepDefinitions.HomePageSteps.user_is_on_Signon_page(HomePageSteps.java:18)
-	at ✽.Given user is on Signon page(automationPractice.feature:28)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -600,31 +273,31 @@ Session ID: 392495b9fb113c4296733e35c54ef5af
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>40</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 14, 2025 08:48:04 PM</div>
+					<div class='panel-lead'>Feb 16, 2025 12:55:30 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 14, 2025 08:49:22 PM</div>
+			 		<div class='panel-lead'>Feb 16, 2025 12:56:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>78,317ms</div>
+					<div class='panel-lead'>53,037ms</div>
 				</div>
 			</div>
 		</div>
@@ -637,31 +310,31 @@ Session ID: 392495b9fb113c4296733e35c54ef5af
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 2,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 0,
 				
-				passGrandChild: 0,
-				failGrandChild: 2,
+				passGrandChild: 9,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 38,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 40,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

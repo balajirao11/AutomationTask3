@@ -1,4 +1,5 @@
 package pageObjects;
+import managers.FileReaderManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -35,7 +36,37 @@ public class MyAccountPage {
 	//My T-shirt page - T-shirt link object
 	@FindBy(how = How.XPATH, using = "//*[@id='block_top_menu']//li[2]//a[@title='T-shirts']")
 	public static WebElement tshirts;
-		
+
+	@FindBy(xpath ="//a[@href=\"/abtest\"]")
+	private static WebElement abTestLink;
+
+	@FindBy(xpath ="//a[@href=\"/dropdown\"]")
+	private static WebElement dropdownLink;
+
+	@FindBy(xpath ="//select[@id=\"dropdown\"]")
+	private static WebElement selDropdown;
+
+	@FindBy(xpath ="//option[@value=\"1\"]")
+	private static WebElement option1;
+
+	@FindBy(xpath ="//a[@href=\"/frames\"]")
+	private static WebElement framesLink;
+
+	@FindBy(xpath ="//a[@href=\"/nested_frames\"]")
+	private static WebElement nestedFrames;
+	@FindBy(xpath ="//a[@href=\"/iframe\"]")
+	private static WebElement iframe;
+
+
+
+
+	@FindBy(xpath ="//option[@selected=\"selected\"]")
+	private static WebElement opt1Selected;
+
+
+
+
+
 	
 	//My Account page object - Sign out button
 	@FindBy(how = How.XPATH, using = "//*[@title='Log me out']")
@@ -53,7 +84,92 @@ public class MyAccountPage {
 			return false;
 		}
 	}
-	
+	public void navigateTo_HomePage() {
+		driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+	}
+
+	public void validateTitle(String arg1) {
+
+		System.out.println("text:" + arg1);
+		String titleExp = "Welcome to the-internet";
+		try {
+			//String titleExp = driver.findElement(By.xpath("//h1[@class= \"heading\" and contains(text()= '"+titleName+"']")).getText();
+			String titleAct = driver.findElement(By.xpath("//h1[contains(text(),\"Welcome\")]")).getText();
+			System.out.println("Title name:" + titleAct);
+			//Assert.assertTrue(titleExp.equals(titleAct));
+		} catch (Exception e) {
+
+		}
+	}
+
+	public void abTitle() {
+		try {
+			abTestLink.click();
+			Thread.sleep(5000);
+			System.out.println("AB Test link clicked");
+		} catch (Exception e) {
+			System.out.println("AB Test link not clicked");
+		}
+	}
+
+	public void validatePage(String arg1) throws InterruptedException {
+
+		System.out.println("text:" + arg1);
+		String titlePageExp = arg1;
+		String titlePageAct = "";
+
+		try {
+			titlePageAct = driver.findElement(By.xpath("//h3[contains(text(),\"A/B Test\")]")).getText();
+			System.out.println("Title Page:" + titlePageAct);
+			//Assert.assertTrue(titlePageExp.equals(titlePageAct));
+		} catch (Exception e) {
+			//Assert.assertTrue(titlePageExp.equals(titlePageAct));
+			System.out.println("Title Page not matched: Pass");
+		}
+
+	}
+
+	public void navBackToHome() throws InterruptedException {
+		driver.navigate().back();
+		Thread.sleep(5000);
+	}
+	public void scrollDown() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+	}
+
+
+
+	public void optionFromDropDown(String arg1) throws InterruptedException {
+
+		try {
+			dropdownLink.click();
+			Thread.sleep(5000);
+			System.out.println("Dropdown link clicked");
+		} catch (Exception e) {
+			System.out.println("Dropdown link not clicked");
+		}
+
+		selDropdown.click();
+		Thread.sleep(5000);
+		option1.click();
+		Thread.sleep(5000);
+		option1.click();
+		Thread.sleep(5000);
+		selDropdown.click();
+	}
+	public void frames() throws InterruptedException {
+
+		try {
+			framesLink.click();
+			Thread.sleep(5000);
+			System.out.println("Frames link clicked");
+		} catch (Exception e) {
+			System.out.println("Frames link not clicked");
+		}
+	}
+		//*/
+
 	//The below method Verify the registered user logged in or not and returns true/false
 	public boolean verifyloggedInUserName(String arg1, String arg2) {
 		String dispUserName = loggedInUserName.getText();

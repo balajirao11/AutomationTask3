@@ -10,10 +10,19 @@ import managers.FileReaderManager;
  
 @RunWith(Cucumber.class)
 @CucumberOptions(
- features = "src/test/resources/functionalTests",
+ /*
+        //features = "src/test/resources/functionalTests",
+   features = Tags.featureFilePath,
  glue= {"stepDefinitions"},
+        tags = {Tags.cucumberTag},
  plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
  monochrome = true
+
+*/
+        features = "src/test/resources/functionalTests/Features",
+        glue= {"stepDefinitions"},
+        plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+        monochrome = true
  )
  
  

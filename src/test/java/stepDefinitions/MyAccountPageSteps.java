@@ -1,5 +1,6 @@
 package stepDefinitions;
 import cucumber.TestContext;
+import cucumber.api.java.en.Given;
 import pageObjects.MyAccountPage;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -12,7 +13,56 @@ public class MyAccountPageSteps {
 		 testContext = context;
 		 myaccountPage = testContext.getPageObjectManager().getMyAccountPage();
 	}
-	
+///*
+	@Given("^I launch the cap web url$")
+	public void I_launch_the_web_url() {
+		myaccountPage.navigateTo_HomePage();
+		//homePage.clkOnSignInlink();
+	}
+
+
+	@When("^I validate the \"([^\"]*)\"$")
+	public void I_validated_the(String arg1) throws Throwable {
+		myaccountPage.validateTitle(arg1);
+		// Write code here that turns the phrase above into concrete actions
+		//	formDetails.enterFirstName(arg1);
+	}
+	@When("I click on ABTesting link")
+	public void I_click_ABTestinglink() throws Throwable {
+		myaccountPage.abTitle();
+		// Write code here that turns the phrase above into concrete actions
+		//	formDetails.enterFirstName(arg1);
+	}
+	@When("^I validate the page as \"([^\"]*)\"$")
+	public void I_validate_the(String arg1) throws Throwable {
+		myaccountPage.validatePage(arg1);
+		// Write code here that turns the phrase above into concrete actions
+		//	formDetails.enterFirstName(arg1);
+	}
+	@When("I navigate back to home Page$")
+	public void I_navigate_back_to_home_page() throws Throwable {
+		myaccountPage.navBackToHome();
+
+	}
+
+	@When("^I selected the \"([^\"]*)\" from the dropdown$")
+	public void I_selected_option_from_dropdown(String arg1) throws Throwable {
+		myaccountPage.optionFromDropDown(arg1);
+	}
+
+
+	@When("I scroll down on web page$")
+	public void I_scroll_down_on_web_page() throws Throwable {
+		myaccountPage.scrollDown();
+	}
+
+	@When("I validated the text from the frames$")
+	public void I_validate_the_text_from_frames() throws Throwable {
+		myaccountPage.frames();
+	}
+
+//	*/
+
 	@Then("^user logged in and navigate to my account page$")
 	public void user_logged_in_and_navigate_to_my_account_page() {
 			if(myaccountPage.comparePageTitle()) {

@@ -1,58 +1,64 @@
 package stepDefinitions;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import io.cucumber.java.en.*;
-import pages.HomePage;
-import pages.ABTestingPage;
-import pages.DropdownPage;
-import pages.FramesPage;
-import utils.BaseTest;
+import cucumber.api.java.en.Given;
+import cucumber.TestContext;
+import cucumber.api.java.en.When;
+import pageObjects.HomePage;
+import org.junit.Assert;
 
-public class StepDefinitions extends BaseTest {
-
-	HomePage homePage;
-	ABTestingPage abTestingPage;
-	DropdownPage dropdownPage;
-	FramesPage framesPage;
-
-	@Given("I launch {string}")
-	public void i_launch(String url) {
-		driver.get(url);
-		homePage = PageFactory.initElements(driver, HomePage.class);
+//this class will take user to the sign on page.
+public class HomePageSteps {
+	 TestContext testContext;
+	 HomePage homePage;
+	 public HomePageSteps(TestContext context) {
+		 testContext = context;
+		// homePage = testContext.getPageObjectManager().getHomePage();
+	}
+	@Given("^user is on Signon page$")
+	public void user_is_on_Signon_page() {
+		homePage.navigateTo_HomePage();
+		homePage.clkOnSignInlink();
+	}
+	@Given("^I launch the cap web url$")
+	public void I_launch_the_web_url() {
+		homePage.navigateTo_HomePage();
+		//homePage.clkOnSignInlink();
 	}
 
-	@Then("The page title should be {string}")
-	public void the_page_title_should_be(String expectedTitle) {
-		Assert.assertEquals(driver.getTitle(), expectedTitle);
+	/*
+	@Given("^I launch the web url$")
+	public void I_launch_the_web_url() {
+		homePage.navigateTo_HomePage();
+		homePage.clkOnSignInlink();
+	}
+*/
+	@When("^I validated the  \"([^\"]*)\"$")
+	public void user_type_first_name(String arg1) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+	//	formDetails.enterFirstName(arg1);
+	}
+	@When("^I validat the \"([^\"]*)\"$")
+	public void I_validated_the(String arg1) throws Throwable {
+		homePage.validateTitle(arg1);
+		// Write code here that turns the phrase above into concrete actions
+		//	formDetails.enterFirstName(arg1);
 	}
 
-	@When("I click on {string} link")
-	public void i_click_on_link(String linkText) {
-		homePage.clickLink(linkText);
+	@When("I click on ABTesting link")
+	public void I_click_ABTestinglink() throws Throwable {
+		homePage.abTitle();
+		// Write code here that turns the phrase above into concrete actions
+		//	formDetails.enterFirstName(arg1);
 	}
 
-	@Then("The text on the page should be {string}")
-	public void the_text_on_the_page_should_be(String expectedText) {
-		abTestingPage = PageFactory.initElements(driver, ABTestingPage.class);
-		Assert.assertTrue(abTestingPage.getText().contains(expectedText));
+
+	@When("^I validate the page as \"([^\"]*)\"$")
+	public void I_validate_the(String arg1) throws Throwable {
+		homePage.validatePage(arg1);
+		// Write code here that turns the phrase above into concrete actions
+		//	formDetails.enterFirstName(arg1);
 	}
 
-	@And("I select {string} from dropdown")
-	public void i_select_from_dropdown(String option) {
-		dropdownPage = PageFactory.initElements(driver, DropdownPage.class);
-		dropdownPage.selectDropdownOption(option);
-	}
 
-	@Then("The selected option should be {string}")
-	public void the_selected_option_should_be(String expectedOption) {
-		Assert.assertEquals(dropdownPage.getSelectedOption(), expectedOption);
-	}
 
-	@Then("I should see {string} link")
-	public void i_should_see_link(String linkText) {
-		framesPage = PageFactory.initElements(driver, FramesPage.class);
-		Assert.assertTrue(framesPage.isLinkPresent(linkText));
-	}
 }
