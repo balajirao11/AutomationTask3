@@ -1,0 +1,7 @@
+stepDefinitions/MyAccountPageSteps.class
+stepDefinitions/HomePageSteps.class
+stepDefinitions/MyWishlistsPageSteps.class
+runners/TestRunner.class
+stepDefinitions/FormDetailsSteps.class
+stepDefinitions/SignInPageSteps.class
+stepDefinitions/SpecificItemPageSteps.class

@@ -1,185 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="28" failures="0" name="runners.TestRunner" time="320.107" errors="2" skipped="26">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="0.458" tests="42" errors="4" skipped="38" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="java.vm.version" value="25.201-b09"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Selenium_Projects\automationPractice"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Selenium_Projects\automationPractice"/>
-    <property name="java.runtime.version" value="1.8.0_201-b09"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\kaushik\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\kaushik\eclipse-workspaceNew\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2796169849179999381.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Git\cmd;C:\Selenium_Projects\apache-maven-3.6.1\bin;C:\Program Files\nodejs\;C:\Users\kaushik\AppData\Roaming\npm;C:\Users\kaushik\AppData\Local\Programs\Microsoft VS Code\bin;C:\Selenium_Projects\eclipse;;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.3"/>
-    <property name="user.home" value="C:\Users\kaushik"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="kaushik"/>
-    <property name="java.class.path" value="C:\Selenium_Projects\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120\jars\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/test-classes:/Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/classes:/Users/balajiraogaddam/.m2/repository/org/assertj/assertj-core/3.13.0/assertj-core-3.13.0.jar:/Users/balajiraogaddam/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/balajiraogaddam/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/balajiraogaddam/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/balajiraogaddam/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/balajiraogaddam/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/balajiraogaddam/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/balajiraogaddam/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/balajiraogaddam/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/balajiraogaddam/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/balajiraogaddam/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/balajiraogaddam/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-picocontainer/1.2.5/cucumber-picocontainer-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/balajiraogaddam/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/balajiraogaddam/.m2/repository/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar:/Users/balajiraogaddam/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/balajiraogaddam/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/Users/balajiraogaddam/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar:/Users/balajiraogaddam/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/balajiraogaddam/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/balajiraogaddam/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/balajiraogaddam/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/balajiraogaddam/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.0.2/cucumber-extentsreport-3.0.2.jar:/Users/balajiraogaddam/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar:/Users/balajiraogaddam/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/balajiraogaddam/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/balajiraogaddam/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/balajiraogaddam/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/balajiraogaddam/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/balajiraogaddam/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/balajiraogaddam/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/balajiraogaddam/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/balajiraogaddam/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/balajiraogaddam/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_201"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Selenium_Projects\automationPractice\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/surefire/surefirebooter-20250214200442015_3.jar /Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/surefire 2025-02-14T20-04-41_967-jvmRun1 surefire-20250214200442015_1tmp surefire_0-20250214200442015_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/test-classes:/Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/classes:/Users/balajiraogaddam/.m2/repository/org/assertj/assertj-core/3.13.0/assertj-core-3.13.0.jar:/Users/balajiraogaddam/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/balajiraogaddam/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/balajiraogaddam/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/balajiraogaddam/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/balajiraogaddam/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/balajiraogaddam/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/balajiraogaddam/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/balajiraogaddam/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/balajiraogaddam/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/balajiraogaddam/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/balajiraogaddam/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/balajiraogaddam/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/cucumber-picocontainer/1.2.5/cucumber-picocontainer-1.2.5.jar:/Users/balajiraogaddam/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/balajiraogaddam/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/balajiraogaddam/.m2/repository/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar:/Users/balajiraogaddam/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/balajiraogaddam/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/Users/balajiraogaddam/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar:/Users/balajiraogaddam/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/balajiraogaddam/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/balajiraogaddam/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/balajiraogaddam/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/balajiraogaddam/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.0.2/cucumber-extentsreport-3.0.2.jar:/Users/balajiraogaddam/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar:/Users/balajiraogaddam/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/balajiraogaddam/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/balajiraogaddam/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/balajiraogaddam/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/balajiraogaddam/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/balajiraogaddam/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/balajiraogaddam/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/balajiraogaddam/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/balajiraogaddam/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/balajiraogaddam/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="user.home" value="/Users/balajiraogaddam"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/balajiraogaddam/IdeaProjects/AutomationTask3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/balajiraogaddam/IdeaProjects/AutomationTask3/target/surefire/surefirebooter-20250214200442015_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="20.0.1"/>
+    <property name="user.name" value="balajiraogaddam"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/balajiraogaddam/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/jk/cqhfltkd0nj6fcgwmf1gfn9m0000gn/T/"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="/Users/balajiraogaddam/IdeaProjects/AutomationTask3"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/balajiraogaddam/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="20.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="Given user is on Signon page" time="10.444">
-    <error message="unknown error: DevToolsActivePort file doesn&apos;t exist
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KARUSALA&apos;, ip: &apos;192.168.1.163&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x01271B23+1448739]
-	Ordinal0 [0x011F5A11+940561]
-	Ordinal0 [0x01182293+467603]
-	Ordinal0 [0x0111E91D+59677]
-	Ordinal0 [0x0111BB1D+47901]
-	Ordinal0 [0x01138D19+167193]
-	Ordinal0 [0x011388ED+166125]
-	Ordinal0 [0x01136FFB+159739]
-	Ordinal0 [0x011209F6+68086]
-	Ordinal0 [0x01121990+72080]
-	Ordinal0 [0x01121929+71977]
-	GetHandleVerifier [0x013B2E4C+1172140]
-	GetHandleVerifier [0x0130FE35+504469]
-	GetHandleVerifier [0x0130FBD0+503856]
-	Ordinal0 [0x0127C9A8+1493416]
-	GetHandleVerifier [0x0131060A+506474]
-	Ordinal0 [0x01207136+1012022]
-	Ordinal0 [0x01206FAF+1011631]
-	Ordinal0 [0x0121133B+1053499]
-	Ordinal0 [0x012114A3+1053859]
-	Ordinal0 [0x012104D5+1049813]
-	BaseThreadInitThunk [0x76C06A14+36]
-	RtlInitializeExceptionChain [0x77C5AD8F+143]
-	RtlInitializeExceptionChain [0x77C5AD5A+90]
-" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KARUSALA&apos;, ip: &apos;192.168.1.163&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x01271B23+1448739]
-	Ordinal0 [0x011F5A11+940561]
-	Ordinal0 [0x01182293+467603]
-	Ordinal0 [0x0111E91D+59677]
-	Ordinal0 [0x0111BB1D+47901]
-	Ordinal0 [0x01138D19+167193]
-	Ordinal0 [0x011388ED+166125]
-	Ordinal0 [0x01136FFB+159739]
-	Ordinal0 [0x011209F6+68086]
-	Ordinal0 [0x01121990+72080]
-	Ordinal0 [0x01121929+71977]
-	GetHandleVerifier [0x013B2E4C+1172140]
-	GetHandleVerifier [0x0130FE35+504469]
-	GetHandleVerifier [0x0130FBD0+503856]
-	Ordinal0 [0x0127C9A8+1493416]
-	GetHandleVerifier [0x0131060A+506474]
-	Ordinal0 [0x01207136+1012022]
-	Ordinal0 [0x01206FAF+1011631]
-	Ordinal0 [0x0121133B+1053499]
-	Ordinal0 [0x012114A3+1053859]
-	Ordinal0 [0x012104D5+1049813]
-	BaseThreadInitThunk [0x76C06A14+36]
-	RtlInitializeExceptionChain [0x77C5AD8F+143]
-	RtlInitializeExceptionChain [0x77C5AD5A+90]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at managers.WebDriverManager.createLocalDriver(WebDriverManager.java:47)
-	at managers.WebDriverManager.createDriver(WebDriverManager.java:29)
-	at managers.WebDriverManager.getDriver(WebDriverManager.java:23)
-	at cucumber.TestContext.&lt;init&gt;(TestContext.java:11)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+  <testcase name="Given user is on Signon page" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.002">
+    <error type="java.lang.ExceptionInInitializerError"><![CDATA[java.lang.ExceptionInInitializerError
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
 	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
 	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
@@ -220,147 +106,31 @@ remote stacktrace: Backtrace:
 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 	at ✽.Given user is on Signon page(automationPractice.feature:4)
-</error>
-    <system-err>Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 7520
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-</system-err>
-  </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" time="11.445">
-    <error message="unknown error: DevToolsActivePort file doesn&apos;t exist
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KARUSALA&apos;, ip: &apos;192.168.1.163&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x01271B23+1448739]
-	Ordinal0 [0x011F5A11+940561]
-	Ordinal0 [0x01182293+467603]
-	Ordinal0 [0x0111E91D+59677]
-	Ordinal0 [0x0111BB1D+47901]
-	Ordinal0 [0x01138D19+167193]
-	Ordinal0 [0x011388ED+166125]
-	Ordinal0 [0x01136FFB+159739]
-	Ordinal0 [0x011209F6+68086]
-	Ordinal0 [0x01121990+72080]
-	Ordinal0 [0x01121929+71977]
-	GetHandleVerifier [0x013B2E4C+1172140]
-	GetHandleVerifier [0x0130FE35+504469]
-	GetHandleVerifier [0x0130FBD0+503856]
-	Ordinal0 [0x0127C9A8+1493416]
-	GetHandleVerifier [0x0131060A+506474]
-	Ordinal0 [0x01207136+1012022]
-	Ordinal0 [0x01206FAF+1011631]
-	Ordinal0 [0x0121133B+1053499]
-	Ordinal0 [0x012114A3+1053859]
-	Ordinal0 [0x012104D5+1049813]
-	BaseThreadInitThunk [0x76C06A14+36]
-	RtlInitializeExceptionChain [0x77C5AD8F+143]
-	RtlInitializeExceptionChain [0x77C5AD5A+90]
-" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KARUSALA&apos;, ip: &apos;192.168.1.163&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x01271B23+1448739]
-	Ordinal0 [0x011F5A11+940561]
-	Ordinal0 [0x01182293+467603]
-	Ordinal0 [0x0111E91D+59677]
-	Ordinal0 [0x0111BB1D+47901]
-	Ordinal0 [0x01138D19+167193]
-	Ordinal0 [0x011388ED+166125]
-	Ordinal0 [0x01136FFB+159739]
-	Ordinal0 [0x011209F6+68086]
-	Ordinal0 [0x01121990+72080]
-	Ordinal0 [0x01121929+71977]
-	GetHandleVerifier [0x013B2E4C+1172140]
-	GetHandleVerifier [0x0130FE35+504469]
-	GetHandleVerifier [0x0130FBD0+503856]
-	Ordinal0 [0x0127C9A8+1493416]
-	GetHandleVerifier [0x0131060A+506474]
-	Ordinal0 [0x01207136+1012022]
-	Ordinal0 [0x01206FAF+1011631]
-	Ordinal0 [0x0121133B+1053499]
-	Ordinal0 [0x012114A3+1053859]
-	Ordinal0 [0x012104D5+1049813]
-	BaseThreadInitThunk [0x76C06A14+36]
-	RtlInitializeExceptionChain [0x77C5AD8F+143]
-	RtlInitializeExceptionChain [0x77C5AD5A+90]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at managers.WebDriverManager.createLocalDriver(WebDriverManager.java:47)
-	at managers.WebDriverManager.createDriver(WebDriverManager.java:29)
-	at managers.WebDriverManager.getDriver(WebDriverManager.java:23)
-	at cucumber.TestContext.&lt;init&gt;(TestContext.java:11)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @3f3e6f71
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
 	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
 	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
@@ -401,100 +171,505 @@ remote stacktrace: Backtrace:
 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.003">
+    <error type="java.lang.ExceptionInInitializerError"><![CDATA[java.lang.ExceptionInInitializerError
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 	at ✽.Given user is on Signon page(automationPractice.feature:4)
-</error>
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @3f3e6f71
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When user enter &quot;tesx18@xyz.com&quot; and click on create an account button" time="11.461">
+  <testcase name="When user enter &quot;tes11@xyz.com&quot; and click on create an account button" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When user select title &quot;ar&quot;" time="11.461">
+  <testcase name="When user select title &quot;mr&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user type first name &quot;firstxa&quot;" time="11.461">
+  <testcase name="And user type first name &quot;firstxa&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user type sur name &quot;lastxa&quot;" time="11.461">
+  <testcase name="And user type sur name &quot;lastxa&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user enter password &quot;Pawd1&quot;" time="11.461">
+  <testcase name="And user enter password &quot;Pawd1&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user enter address &quot;x1 lane&quot;" time="11.461">
+  <testcase name="And user enter address &quot;x1 lane&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user enter city &quot;salt lake&quot;" time="11.461">
+  <testcase name="And user enter city &quot;salt lake&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user select the state &quot;Ohio&quot;" time="11.461">
+  <testcase name="And user select the state &quot;Ohio&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user enter the zip &quot;84044&quot;" time="11.461">
+  <testcase name="And user enter the zip &quot;84044&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user select the country &quot;United States&quot;" time="11.461">
+  <testcase name="And user select the country &quot;United States&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user enter mobile phone &quot;9874563210&quot;" time="11.465">
+  <testcase name="And user enter mobile phone &quot;9834398090&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user enter address alias &quot;X1list&quot;" time="11.465">
+  <testcase name="And user enter address alias &quot;X1list&quot;" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When click on Register Button" time="11.465">
+  <testcase name="When click on Register Button" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="Then user logged in and navigate to my account page" time="11.465">
+  <testcase name="Then user logged in and navigate to my account page" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user name &quot;firstxa&quot; followed by &quot;lastxa&quot; displayed in top right corner" time="11.465">
+  <testcase name="When user clicks on &quot;T-shirts&quot; tab" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user can see &quot;MY WISHLISTS&quot; link" time="11.465">
+  <testcase name="When click on Checkout Button" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When user clicks on my wishlists link" time="11.465">
+  <testcase name="And logout from the application" classname="| tes11@xyz.com | mr | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="Then user can see &quot;TOP SELLERS&quot; list in My Store Page" time="11.465">
+  <testcase name="Given user is on Signon page" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.001">
+    <error message="Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at ✽.Given user is on Signon page(automationPractice.feature:28)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @3f3e6f71 [in thread "main"]
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.001">
+    <error message="Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at ✽.Given user is on Signon page(automationPractice.feature:28)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @3f3e6f71 [in thread "main"]
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="When user enter &quot;tes19@xyz.com&quot; and click on create an account button" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When user clicks on first item in TOP SELLERS list" time="11.465">
+  <testcase name="When user select title &quot;mr&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="Then user can see Add To Wishlist under Add To Cart button" time="11.465">
+  <testcase name="And user type first name &quot;firstxb&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When user add an item to my wishlist" time="11.493">
+  <testcase name="And user type sur name &quot;lastxb&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="Then Application confirms that item &quot;Added to your wishlist.&quot;" time="11.493">
+  <testcase name="And user enter password &quot;Pawd1&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="When user navigates to My account page" time="11.493">
+  <testcase name="And user enter address &quot;x1 lane&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And user clicks on my wishlists link" time="11.493">
+  <testcase name="And user enter city &quot;salt lake&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="Then user can confirm that item is added to the wishlist" time="11.493">
+  <testcase name="And user select the state &quot;Ohio&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
-  <testcase classname="| tesx18@xyz.com | ar | firstxa | lastxa | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9874563210 | X1list |" name="And logout from the application" time="11.493">
+  <testcase name="And user enter the zip &quot;84044&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user select the country &quot;United States&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user enter mobile phone &quot;9834398090&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user enter address alias &quot;X1list&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="When click on Register Button" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then user logged in and navigate to my account page" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user name &quot;firstxb&quot; followed by &quot;lastxb&quot; displayed in top right corner" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user can see &quot;My personal information&quot; link in My Account Page" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="When user clicks on My personal information link" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user update first name &quot;testss&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And user current password &quot;Pawd1&quot;" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then click on save Button" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="And logout from the application" classname="| tes19@xyz.com | mr | firstxb | lastxb | Pawd1 | x1 lane | salt lake | Ohio | 84044 | United States | 9834398090 | X1list |" time="0.0">
     <skipped/>
   </testcase>
 </testsuite>
