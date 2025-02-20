@@ -14,7 +14,7 @@ public class MyAccountPageSteps {
 		 myaccountPage = testContext.getPageObjectManager().getMyAccountPage();
 	}
 ///*
-	@Given("^I launch the cap web url$")
+	@Given("^I launch the herokuapp web url$")
 	public void I_launch_the_web_url() {
 		myaccountPage.navigateTo_HomePage();
 		//homePage.clkOnSignInlink();
@@ -50,6 +50,10 @@ public class MyAccountPageSteps {
 		myaccountPage.optionFromDropDown(arg1);
 	}
 
+	@When("I validate the option1 selected$")
+	public void I_validate_option1_selected() throws Throwable {
+		myaccountPage.valOption();
+	}
 
 	@When("I scroll down on web page$")
 	public void I_scroll_down_on_web_page() throws Throwable {

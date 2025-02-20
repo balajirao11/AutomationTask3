@@ -19,7 +19,7 @@ import managers.FileReaderManager;
  monochrome = true
 
 */
-        features = "src/test/resources/functionalTests/Features",
+        features = "src/test/resources/capStoneProject4",
         glue= {"stepDefinitions"},
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
         monochrome = true

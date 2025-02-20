@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -45,6 +46,9 @@ public class MyAccountPage {
 
 	@FindBy(xpath ="//select[@id=\"dropdown\"]")
 	private static WebElement selDropdown;
+
+	@FindBy(xpath ="//h3[contains(text(),\"Dropdown List\")]")
+	private static WebElement dropDown;
 
 	@FindBy(xpath ="//option[@value=\"1\"]")
 	private static WebElement option1;
@@ -157,6 +161,24 @@ public class MyAccountPage {
 		option1.click();
 		Thread.sleep(5000);
 		selDropdown.click();
+
+		/*
+			WebElement dropdown = driver.findElement(By.id("dropdown"));
+			Select select = new Select(dropdown);
+			select.selectByVisibleText(option);
+		}
+		public void i_verify_is_selected(String expectedOption) {
+			WebElement dropdown = driver.findElement(By.id("dropdown"));
+			Select select = new Select(dropdown);
+			Assert.assertEquals(select.getFirstSelectedOption().getText(), expectedOption);
+		}
+		*/
+	}
+
+	public void valOption() throws InterruptedException {
+		dropDown.click();
+		Thread.sleep(5000);
+
 	}
 	public void frames() throws InterruptedException {
 
