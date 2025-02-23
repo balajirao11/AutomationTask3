@@ -20,24 +20,17 @@ public class MyAccountPageSteps {
 		//homePage.clkOnSignInlink();
 	}
 
-
 	@When("^I validate the \"([^\"]*)\"$")
 	public void I_validated_the(String arg1) throws Throwable {
 		myaccountPage.validateTitle(arg1);
-		// Write code here that turns the phrase above into concrete actions
-		//	formDetails.enterFirstName(arg1);
 	}
 	@When("I click on ABTesting link")
 	public void I_click_ABTestinglink() throws Throwable {
 		myaccountPage.abTitle();
-		// Write code here that turns the phrase above into concrete actions
-		//	formDetails.enterFirstName(arg1);
 	}
 	@When("^I validate the page as \"([^\"]*)\"$")
 	public void I_validate_the(String arg1) throws Throwable {
 		myaccountPage.validatePage(arg1);
-		// Write code here that turns the phrase above into concrete actions
-		//	formDetails.enterFirstName(arg1);
 	}
 	@When("I navigate back to home Page$")
 	public void I_navigate_back_to_home_page() throws Throwable {

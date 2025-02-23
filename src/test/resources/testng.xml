@@ -2,7 +2,20 @@
 <suite name="Test Suite" parallel="false">
     <test name="BDD Tests">
         <classes>
-            <class name="runner.TestRunner"/>
+            <class name="runners.TestRunner"/>
         </classes>
     </test>
+</suite>
+
+<!--<suite name="Autify Test Suite"> -->
+<test name="Window Handling Tests">
+    <groups>
+        <run>
+            <include name="windowHandling"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="stepDefinitions.AutifyTestNGTest"/>
+    </classes>
+</test>
 </suite>
