@@ -1,5 +1,6 @@
 package pageObjects;
 import managers.FileReaderManager;
+import org.apache.http.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import static org.testng.Assert.assertEquals;
 
 public class MyAccountPage {
 	WebDriver driver;
@@ -41,6 +43,9 @@ public class MyAccountPage {
 	@FindBy(xpath ="//a[@href=\"/abtest\"]")
 	private static WebElement abTestLink;
 
+	@FindBy(xpath ="//input[@id=\"twotabsearchtextbox\"]")
+	private static WebElement srcBox;
+
 	@FindBy(xpath ="//a[@href=\"/dropdown\"]")
 	private static WebElement dropdownLink;
 
@@ -61,17 +66,9 @@ public class MyAccountPage {
 	@FindBy(xpath ="//a[@href=\"/iframe\"]")
 	private static WebElement iframe;
 
-
-
-
 	@FindBy(xpath ="//option[@selected=\"selected\"]")
 	private static WebElement opt1Selected;
 
-
-
-
-
-	
 	//My Account page object - Sign out button
 	@FindBy(how = How.XPATH, using = "//*[@title='Log me out']")
 	private static WebElement signoutbtn;
@@ -92,6 +89,11 @@ public class MyAccountPage {
 		driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
 	}
 
+	public void launchAmazon() {
+		driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+	}
+
+
 	public void validateTitle(String arg1) {
 
 		System.out.println("text:" + arg1);
@@ -100,7 +102,7 @@ public class MyAccountPage {
 			//String titleExp = driver.findElement(By.xpath("//h1[@class= \"heading\" and contains(text()= '"+titleName+"']")).getText();
 			String titleAct = driver.findElement(By.xpath("//h1[contains(text(),\"Welcome\")]")).getText();
 			System.out.println("Title name:" + titleAct);
-			//Assert.assertTrue(titleExp.equals(titleAct));
+
 		} catch (Exception e) {
 
 		}
@@ -110,29 +112,42 @@ public class MyAccountPage {
 		try {
 			abTestLink.click();
 			Thread.sleep(5000);
-			System.out.println("AB Test link clicked");
+			System.out.println("AB Test link clicked: Passed");
 		} catch (Exception e) {
-			System.out.println("AB Test link not clicked");
+			System.out.println("AB Test link not clicked: Failed");
 		}
+	}
+
+
+	public void srchBox() {
+		try {
+			srcBox.click();
+			Thread.sleep(5000);
+			System.out.println("Search Box selected: Passed");
+		} catch (Exception e) {
+			System.out.println("Search Box selected: Failed");
+		}
+
+		srcBox.sendKeys("TEXT");
 	}
 
 	public void validatePage(String arg1) throws InterruptedException {
 
 		System.out.println("text:" + arg1);
 		String titlePageExp = arg1;
+
+		String titlePageExp1 = "A/B Test Control";
 		String titlePageAct = "";
 
 		try {
 			titlePageAct = driver.findElement(By.xpath("//h3[contains(text(),\"A/B Test\")]")).getText();
 			System.out.println("Title Page:" + titlePageAct);
-			//Assert.assertTrue(titlePageExp.equals(titlePageAct));
+			assertEquals(titlePageAct,titlePageExp,"Title Page not matched");
+
 		} catch (Exception e) {
-			//Assert.assertTrue(titlePageExp.equals(titlePageAct));
-			System.out.println("Title Page not matched: Pass");
+			System.out.println("Title Page not matched: Failed");
 		}
-
 	}
-
 	public void navBackToHome() throws InterruptedException {
 		driver.navigate().back();
 		Thread.sleep(5000);
@@ -142,16 +157,14 @@ public class MyAccountPage {
 		js.executeScript("window.scrollBy(0,350)", "");
 	}
 
-
-
 	public void optionFromDropDown(String arg1) throws InterruptedException {
 
 		try {
 			dropdownLink.click();
 			Thread.sleep(5000);
-			System.out.println("Dropdown link clicked");
+			System.out.println("Dropdown link clicked: Passed");
 		} catch (Exception e) {
-			System.out.println("Dropdown link not clicked");
+			System.out.println("Dropdown link not clicked: Failed");
 		}
 
 		selDropdown.click();
@@ -181,13 +194,54 @@ public class MyAccountPage {
 
 	}
 	public void frames() throws InterruptedException {
-
 		try {
 			framesLink.click();
 			Thread.sleep(5000);
-			System.out.println("Frames link clicked");
+			System.out.println("Frames link clicked: Passed");
 		} catch (Exception e) {
-			System.out.println("Frames link not clicked");
+			System.out.println("Frames link not clicked: Failed");
+		}
+	}
+	public void nestdFrames() throws InterruptedException {
+		valNestdFrame();
+		valiFrame();
+		try {
+			nestedFrames.click();
+			Thread.sleep(5000);
+			System.out.println("Nest Frames link present: Passed");
+		} catch (Exception e) {
+			System.out.println("Frames link not present: Failed");
+		}
+	}
+	public void iFrames() throws InterruptedException {
+		try {
+			iframe.click();
+			Thread.sleep(5000);
+			System.out.println("iFrames link present: Passed");
+		} catch (Exception e) {
+			System.out.println("iFrames link not present: Failed");
+		}
+	}
+	public void valNestdFrame() throws InterruptedException {
+
+		String frameTxtExp1 = "Nested Frames";
+				try {
+			String frameTxtAct = driver.findElement(By.xpath(String.valueOf(iframe))).getText();
+			System.out.println("Title Page:" + frameTxtAct);
+			assertEquals(frameTxtAct,frameTxtExp1,"Nested frame text not matched");
+		} catch (Exception e) {
+			System.out.println("Title Page not matched: Failed");
+		}
+	}
+	public void valiFrame() throws InterruptedException {
+
+		String iframeExp1 = "iFrame";
+		try {
+			String iframeAct = driver.findElement(By.xpath(String.valueOf(iframe))).getText();
+			System.out.println("Title Page:" + iframeAct);
+			assertEquals(iframeAct,iframeExp1,"iFrame text not matched");
+		} catch (Exception e) {
+			System.out.println("Title Page not matched: Failed");
 		}
 	}
 		//*/

@@ -11,6 +11,10 @@ Feature: Implement below capstone project using Selenium with Java concepts (Imp
     And   I navigate back to home Page
     And   I scroll down on web page
     And   I validated the text from the frames
+    And   I validate the nested frames hyperlinks
+    And   I navigate back to previous page
+    And   I validate the iframes hyperlinks
+    Then  I closed the web url
 
     Examples:
       | page_title | page_name            | option  |
